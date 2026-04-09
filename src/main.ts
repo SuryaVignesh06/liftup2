@@ -1,3 +1,11 @@
+// Extend window for YouTube API
+declare global {
+  interface Window {
+    onYouTubeIframeAPIReady: () => void;
+    YT: any;
+  }
+}
+
 import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -110,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.toggle('active', link.getAttribute('href') === current);
     });
   }
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
 
   // ===========================================
   // 5. COHORT ZERO CAROUSEL + YOUTUBE API
