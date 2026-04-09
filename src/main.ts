@@ -111,8 +111,86 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  window.addEventListener('scroll', () => {
-    requestAnimationFrame(updateActiveLink);
+  // ===========================================
+  // 5. COHORT ZERO CAROUSEL + YOUTUBE API
+  // ===========================================
+  const czTrack = document.getElementById('czTrack');
+  const czSlides = document.querySelectorAll('.cz-slide');
+  const czPrev = document.getElementById('czPrev');
+  const czNext = document.getElementById('czNext');
+  
+  const studentName = document.getElementById('czStudentName');
+  const studentBranch = document.getElementById('czStudentBranch');
+  const studentClg = document.getElementById('czStudentClg');
+
+  let czIndex = 0;
+  let players: any[] = [];
+
+  // Initialize YouTube Players
+  window.onYouTubeIframeAPIReady = () => {
+    czSlides.forEach((slide, idx) => {
+      const playerDiv = slide.querySelector('[id^="czPlayer"]');
+      if (playerDiv) {
+        const videoId = (playerDiv as HTMLElement).dataset.videoId;
+        players[idx] = new (window as any).YT.Player(playerDiv.id, {
+          height: '100%',
+          width: '100%',
+          videoId: videoId,
+          playerVars: {
+            'playsinline': 1,
+            'rel': 0,
+            'modestbranding': 1
+          }
+        });
+      }
+    });
+  };
+
+  // Load YouTube IFrame API
+  if (!document.getElementById('yt-api-script')) {
+    const tag = document.createElement('script');
+    tag.id = 'yt-api-script';
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+  }
+
+  function updateCZCarousel() {
+    if (!czTrack || czSlides.length === 0) return;
+
+    // Pause all videos
+    players.forEach(p => {
+      if (p && p.pauseVideo) p.pauseVideo();
+    });
+
+    // Remove active class from all
+    czSlides.forEach(s => s.classList.remove('active'));
+    
+    // Add active class to current
+    const activeSlide = czSlides[czIndex] as HTMLElement;
+    activeSlide.classList.add('active');
+
+    // Shift track
+    const offset = -czIndex * 100;
+    czTrack.style.transform = `translateX(${offset}%)`;
+
+    // Update Info
+    if (studentName) studentName.textContent = activeSlide.dataset.name || '';
+    if (studentBranch) studentBranch.textContent = activeSlide.dataset.branch || '';
+    if (studentClg) studentClg.textContent = activeSlide.dataset.clg || '';
+  }
+
+  czPrev?.addEventListener('click', () => {
+    czIndex = (czIndex > 0) ? czIndex - 1 : czSlides.length - 1;
+    updateCZCarousel();
   });
+
+  czNext?.addEventListener('click', () => {
+    czIndex = (czIndex < czSlides.length - 1) ? czIndex + 1 : 0;
+    updateCZCarousel();
+  });
+
+  // Initial call to set states
+  updateCZCarousel();
 
 });
