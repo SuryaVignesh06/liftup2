@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Cohort One | LiftUp by Orionac</title>
+  <meta name="description" content="Apply to run LiftUp Cohort One at your institution. Turning first-year students into builders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Poppins:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body class="apply-page">
+
+  <!-- ===========================
+       BACKGROUND ELEMENTS
+       =========================== -->
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-3"></div>
+
+  <!-- ===========================
+       VIBRANT TOP TICKER
+       =========================== -->
+  <div class="top-ticker">
+    <div class="ticker-track">
+      <span>107 students. 4 days. One live AI product.</span>
+      <span>107 students. 4 days. One live AI product.</span>
+      <span>107 students. 4 days. One live AI product.</span>
+      <span>107 students. 4 days. One live AI product.</span>
+      <span>107 students. 4 days. One live AI product.</span>
+      <span>107 students. 4 days. One live AI product.</span>
+    </div>
+  </div>
+
+  <!-- ===========================
+       TOP CTA BAR
+       =========================== -->
+  <div class="top-cta-bar">
+    <div class="container top-bar-inner">
+      <div class="brand-logo" onclick="location.href='./'" style="cursor:pointer">LIFT<span class="grad">UP</span></div>
+      <nav class="header-nav">
+        <a href="./#overview" class="nav-btn">Overview</a>
+        <a href="./#cohorts" class="nav-btn">Cohorts</a>
+        <a href="./#outcomes" class="nav-btn">Outcomes</a>
+        <a href="cohort-zero.html" class="nav-btn" style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
+      </nav>
+      <div class="header-right-group">
+        <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
+        <div class="live-status-badge" onclick="location.href='./#cohorts'">
+          <span class="pulse-dot"></span>
+          COHORT 1 IS LIVE
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="apply-main-content">
+    <section class="apply-hero reveal">
+      <div class="container text-center">
+        <h1 class="premium-headline">Institutional<br><span class="grad">Application</span></h1>
+        <p class="premium-sub">Apply to run LiftUp Cohort One at your institution. Our team will review your application and get in touch within 48 hours to discuss the partnership.</p>
+      </div>
+    </section>
+
+    <section class="form-container-wrap">
+      <div class="container narrow-container">
+        <div class="apply-form-glass reveal">
+          <form id="applyForm" class="premium-form">
+            <!-- SECTION 1: INSTITUTION DETAILS -->
+            <div class="form-step">
+              <span class="step-num">01</span>
+              <div class="form-step-content">
+                <h3 class="form-section-title">Institutional Details</h3>
+                <div class="form-grid">
+                  <div class="input-group">
+                    <label for="collegeName">College Name</label>
+                    <input type="text" id="collegeName" name="collegeName" placeholder="e.g. Vishnu Institute of Technology" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="location">Location (City and State)</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Bhimavaram, AP" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2: CONTACT DETAILS -->
+            <div class="form-step">
+              <span class="step-num">02</span>
+              <div class="form-step-content">
+                <h3 class="form-section-title">Point of Contact</h3>
+                <div class="form-grid">
+                  <div class="input-group">
+                    <label for="pocName">Full Name</label>
+                    <input type="text" id="pocName" name="pocName" placeholder="e.g. Dr. Satyanarayana" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Institutional Email</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. admin@college.edu.in" required>
+                  </div>
+                  <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 3: STUDENT DETAILS -->
+            <div class="form-step">
+              <span class="step-num">03</span>
+              <div class="form-step-content">
+                <h3 class="form-section-title">Cohort Target</h3>
+                <div class="form-grid">
+                  <div class="input-group">
+                    <label for="yearOfStudents">Current Student Batch (e.g. 1st year, CSBS branch)</label>
+                    <input type="text" id="yearOfStudents" name="yearOfStudents" placeholder="e.g. 1st year B.Tech" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-vibrant-large">Submit Partnership Inquiry</button>
+            </div>
+          </form>
+
+          <!-- SUCCESS STATE -->
+          <div class="form-success-overlay" id="successOverlay">
+            <div class="success-content">
+              <div class="success-icon-wrap">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h2 class="grad">Application Received</h2>
+              <p>Your institutional inquiry has been successfully submitted. Check your inbox for a confirmation. Our partnership team will be in touch shortly.</p>
+              <button class="btn-ticker-cta" onclick="location.href='./'">Return to Home</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="minimal-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Column 1: Headline -->
+        <div class="footer-headline-col">
+          <h2 class="footer-big-text">
+            India's first AI <br> product cohort<span class="trademark">®</span>
+          </h2>
+        </div>
+
+        <!-- Column 2: REACH US -->
+        <div class="footer-info-col">
+          <h4 class="footer-sub-label">REACH US</h4>
+          <a href="mailto:support@orionac.in" class="footer-contact-link">support@orionac.in</a>
+          <p class="footer-address">
+            Orionac Systems Thinking Group<br>
+            Andhra Pradesh, India
+          </p>
+          <a href="mailto:support@orionac.in" class="footer-action-link">GET IN TOUCH ↗</a>
+        </div>
+
+        <!-- Column 3: NAVIGATION -->
+        <div class="footer-info-col">
+          <h4 class="footer-sub-label">NAVIGATION</h4>
+          <nav class="footer-vertical-nav">
+            <a href="./">HOME</a>
+            <a href="./#cohorts">COHORTS</a>
+            <a href="./#outcomes">OUTCOMES</a>
+            <a href="cohort-zero.html">CASE STUDY</a>
+          </nav>
+          <a href="./#faq" class="footer-action-link">SEE FAQ ↗</a>
+        </div>
+
+        <!-- Column 4: FOLLOW US -->
+        <div class="footer-cta-col">
+          <h4 class="footer-info-title">QUESTIONS ABOUT LIFTUP?</h4>
+          <a href="mailto:support@orionac.in" class="footer-large-link underline-link">INQUIRE NOW →</a>
+          
+          <div class="footer-social-wrap">
+            <h4 class="footer-sub-label">FOLLOW US</h4>
+            <div class="footer-minimal-socials">
+              <a href="https://www.linkedin.com/company/orionac" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://www.instagram.com/orionac4u" target="_blank" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="mailto:support@orionac.in" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-row">
+        <p>© 2026 LIFTUP by ORIONAC. All rights reserved.</p>
+        <p>Built with purpose in India 🇮🇳</p>
+      </div>
+    </div>
+    <div class="footer-gradient-line"></div>
+  </footer>
+
+  <script>
+    // Form submission handler
+    document.getElementById('applyForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+      const unifiedMessage = `Application Details:
+- Contact Person: ${formData.get("pocName")}
+- Location: ${formData.get("location")}
+- Year of Students: ${formData.get("yearOfStudents")}`;
+
+      const fields = [
+        { name: "company", value: formData.get("collegeName") },
+        { name: "email", value: formData.get("email") },
+        { name: "phone", value: formData.get("phone") },
+        { name: "firstname", value: formData.get("pocName") },
+        { name: "lastname", value: `[Year: ${formData.get("yearOfStudents")}]` },
+        { name: "state", value: formData.get("yearOfStudents") },
+        { name: "jobtitle", value: formData.get("yearOfStudents") },
+        { name: "city", value: formData.get("location") },
+        { name: "address", value: formData.get("location") },
+        { name: "message", value: unifiedMessage }
+      ];
+
+      const hubspotCookie = document.cookie.split('; ').find(row => row.startsWith('hubspotutk='))?.split('=')[1];
+
+      const payload = { 
+        fields,
+        context: {
+          hutk: hubspotCookie,
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+
+      try {
+        const response = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/243790860/dcf45986-77a4-4995-9018-928c50639c6b", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          document.getElementById('successOverlay').classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          form.reset();
+        } else {
+          const errData = await response.json();
+          console.error("Form Submission Error:", errData);
+          alert("Submission failed. Please check your network connection.");
+        }
+      } catch (error) {
+        console.error("Network Error:", error);
+        alert("A network error occurred. Please try again.");
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

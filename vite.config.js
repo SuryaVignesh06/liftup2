@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         cohortZero: 'cohort-zero.html',
+        apply: 'apply.html',
       },
     },
   },

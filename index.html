@@ -40,7 +40,13 @@
         <a href="#outcomes" class="nav-btn">Outcomes</a>
         <a href="cohort-zero.html" class="nav-btn" style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
       </nav>
-      <button class="btn-ticker-cta" onclick="window.open('mailto:contact@orionac.in','_blank')">Apply Now</button>
+      <div class="header-right-group">
+        <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
+        <div class="live-status-badge" onclick="location.href='./#cohorts'">
+          <span class="pulse-dot"></span>
+          COHORT 1 IS LIVE
+        </div>
+      </div>
     </div>
   </div>
 
@@ -61,7 +67,7 @@
       <p class="hero-matter reveal">Not a tutorial. Not a hackathon project. A deployed, working product - designed, architected, and shipped by students who had never worked in a real engineering team before.</p>
 
       <div class="hero-cta-centered reveal">
-        <button class="btn-vibrant-large" onclick="window.open('mailto:contact@orionac.in','_blank')">Apply for Cohort One</button>
+        <button class="btn-vibrant-large" onclick="location.href='apply.html'">Apply for Cohort One</button>
       </div>
 
       <div class="hero-decor decor-left"></div>
@@ -86,9 +92,9 @@
           <div class="partner-support">
             <span class="support-label">Supported by</span>
             <div class="partner-logos">
-              <span class="partner-logo">Google Cloud</span>
-              <span class="partner-logo">Amazon AWS</span>
-              <span class="partner-logo">NVIDIA</span>
+              <img src="google.png" alt="Google Cloud" class="partner-logo-img">
+              <img src="aws.png" alt="Amazon AWS" class="partner-logo-img">
+              <img src="nvidia_logo (1).png" alt="NVIDIA" class="partner-logo-img">
             </div>
           </div>
         </div>
@@ -102,7 +108,7 @@
   <!-- ===========================
        WHO CAN PARTICIPATE
        =========================== -->
-  <section class="participate-section" id="cohorts">
+  <section class="participate-section" id="participate">
     <!-- Decorative Background Image -->
     <img src="Gradient cubes in soft light-Photoroom.png" alt="" class="decorative-cubes" aria-hidden="true">
     <div class="container">
@@ -738,7 +744,7 @@
   <!-- ===========================
        TIMELINE — Dark section
        =========================== -->
-  <section class="timeline-section">
+  <section class="timeline-section" id="cohorts">
     <div class="container">
       <h2 class="reveal">Timeline</h2>
 
@@ -775,7 +781,7 @@
           <div class="tl-card-grid">
             <div>
               <h4>1. Selection</h4>
-              <p>107 students hand-selected from CSE, IT, AI&ML, AITS, and CSBS branches.</p>
+              <p>107 students hand-selected from CSE, IT, AI&ML, AI&DS, and CSBS branches.</p>
               <h4>2. Tools</h4>
               <p>Built entirely on Google Stitch (AI app builder) and Google Antigravity (deployment).</p>
               <h4>3. Sprint Format</h4>
@@ -822,13 +828,14 @@
 
           <div class="cl-grad-card">
             <p>The application process is live. If your institution wants to run LiftUp, the MOU framework is ready. Every student who applies commits to shipping — no passengers.</p>
-            <p>Contact us at contact@orionac.in to begin the partnership process. We handle everything — from student selection to product deployment.</p>
-            <button onclick="window.open('mailto:contact@orionac.in','_blank')">Apply Now</button>
+            <p>Contact us at support@orionac.in to begin the partnership process. We handle everything — from student selection to product deployment.</p>
+            <button onclick="location.href='apply.html'">Apply Now</button>
           </div>
         </div>
 
         <div class="reveal">
-          <div class="cl-detail-card">
+          <div class="cl-detail-card highlight-glow reveal">
+            <div class="cl-card-badge">PROGRAM</div>
             <div class="cl-detail-inner">
               <h4>The Cohort program includes:</h4>
               <ul>
@@ -907,7 +914,7 @@
             <span>How do I apply for Cohort One?</span>
             <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Reach out at contact@orionac.in. If you're an institution, we'll walk you through the MOU process. If you're a student, loop in your placement cell or department head.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Reach out at support@orionac.in. If you're an institution, we'll walk you through the MOU process. If you're a student, loop in your placement cell or department head.</div></div>
         </div>
       </div>
     </div>
@@ -916,71 +923,66 @@
   <!-- ===========================
        FOOTER
        =========================== -->
-  <footer>
-    <!-- Subtle top glow accent -->
-    <div class="footer-glow"></div>
-
+  <footer class="minimal-footer">
     <div class="container">
-
-      <!-- Top brand row -->
-      <div class="footer-brand-row">
-        <div class="footer-brand">
-          <div class="footer-wordmark">LIFT<span class="grad">UP</span></div>
-          <span class="footer-x">×</span>
-          <div class="footer-wordmark" style="font-size:16px; color:#555;">Orionac</div>
+      <div class="footer-main-grid">
+        <!-- Column 1: Headline -->
+        <div class="footer-headline-col">
+          <h2 class="footer-big-text">
+            India's first AI <br> product cohort<span class="trademark">®</span>
+          </h2>
         </div>
-        <p class="footer-tagline">India's first AI product cohort — turning first-year students into builders.</p>
+
+        <!-- Column 2: REACH US -->
+        <div class="footer-info-col">
+          <h4 class="footer-sub-label">REACH US</h4>
+          <a href="mailto:support@orionac.in" class="footer-contact-link">support@orionac.in</a>
+          <p class="footer-address">
+            Orionac Systems Thinking Group<br>
+            Andhra Pradesh, India
+          </p>
+          <a href="mailto:support@orionac.in" class="footer-action-link">GET IN TOUCH ↗</a>
+        </div>
+
+        <!-- Column 3: PROGRAM -->
+        <div class="footer-info-col">
+          <h4 class="footer-sub-label">PROGRAM</h4>
+          <nav class="footer-vertical-nav">
+            <a href="#overview">OVERVIEW</a>
+            <a href="#cohorts">COHORTS</a>
+            <a href="#outcomes">OUTCOMES</a>
+            <a href="cohort-zero.html">CASE STUDY</a>
+          </nav>
+          <a href="./#faq" class="footer-action-link">SEE FAQ ↗</a>
+        </div>
+
+        <!-- Column 4: PARTNER -->
+        <div class="footer-cta-col">
+          <h4 class="footer-info-title">WANT TO RUN LIFTUP AT YOUR INSTITUTION?</h4>
+          <a href="apply.html" class="footer-large-link underline-link">APPLY FOR PARTNERSHIP →</a>
+          
+          <div class="footer-social-wrap">
+            <h4 class="footer-sub-label">FOLLOW US</h4>
+            <div class="footer-minimal-socials">
+              <a href="https://www.linkedin.com/company/orionac" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://www.instagram.com/orionac4u" target="_blank" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="mailto:support@orionac.in" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-divider"></div>
-
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <p style="font-size:14px;color:#808080;margin-bottom:12px;">For any queries, email us at:</p>
-          <div class="footer-email-pill" onclick="navigator.clipboard.writeText('contact@orionac.in')">
-            <span>contact@orionac.in</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-          </div>
-          <!-- Social icons -->
-          <div class="footer-socials">
-            <a href="https://www.instagram.com/orionac.in" target="_blank" class="footer-social-btn" aria-label="Instagram">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/company/orionac" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="mailto:contact@orionac.in" class="footer-social-btn" aria-label="Email">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-col" style="text-align:center;">
-          <h4>Program</h4>
-          <a href="#overview">Overview</a>
-          <a href="#outcomes">Why Participate</a>
-          <a href="#cohorts">Who Can Join</a>
-          <a href="#voices">Student Voices</a>
-          <a href="cohort-zero.html">Cohort Zero</a>
-        </div>
-
-        <div class="footer-col" style="text-align: right;">
-          <h4>Quick Links</h4>
-          <a href="#faq">FAQ</a>
-          <a href="mailto:contact@orionac.in">Partner With Us</a>
-          <a href="cohort-zero.html">Case Study</a>
-          <a href="mailto:contact@orionac.in">Apply Now</a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 LiftUp by Orionac. All rights reserved.</p>
-        <p style="font-size:12px; color:#404040; margin-top:4px;">Built with purpose in India 🇮🇳</p>
+      <div class="footer-legal-row">
+        <p>© 2026 LIFTUP by ORIONAC. All rights reserved.</p>
+        <p>Built with purpose in India 🇮🇳</p>
       </div>
     </div>
-
-    <!-- Gradient line at the very bottom -->
     <div class="footer-gradient-line"></div>
   </footer>
 
