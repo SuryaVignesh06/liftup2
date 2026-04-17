@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LiftUp — India's First AI Product Cohort | Orionac</title>
-  <meta name="description" content="107 students. 4 days. One live AI product. LiftUp by Orionac is India's first systems-thinking cohort. Apply for Cohort One.">
+  <meta name="description"
+    content="107 students. 4 days. One live AI product. LiftUp by Orionac is India's first systems-thinking cohort. Apply for Cohort One.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Poppins:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Poppins:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;700&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
   <script type="module" src="/src/main.ts"></script>
 </head>
+
 <body>
 
 
@@ -38,14 +43,15 @@
         <a href="#overview" class="nav-btn">Overview</a>
         <a href="#cohorts" class="nav-btn">Cohorts</a>
         <a href="#outcomes" class="nav-btn">Outcomes</a>
-        <a href="cohort-zero.html" class="nav-btn" style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
+        <a href="cohort-zero.html" class="nav-btn"
+          style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
       </nav>
       <div class="header-right-group">
-        <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
         <div class="live-status-badge" onclick="location.href='./#cohorts'">
           <span class="pulse-dot"></span>
-          COHORT 1 IS LIVE
+          <span class="badge-text-prefix">COHORT 1 IS </span>LIVE
         </div>
+        <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
       </div>
     </div>
   </div>
@@ -61,10 +67,14 @@
 
       <div class="hero-branding-stack reveal">
         <h1 class="hero-title-top">LIFT<span class="grad">UP</span></h1>
-        <h1 class="hero-title-main animated-grad" data-text="COHORT">COHORT</h1>
+        <div class="hero-india-wrap">
+          <span class="hero-year-badge">2026</span>
+          <h1 class="hero-title-main animated-grad" data-text="INDIA">INDIA</h1>
+        </div>
       </div>
 
-      <p class="hero-matter reveal">Not a tutorial. Not a hackathon project. A deployed, working product - designed, architected, and shipped by students who had never worked in a real engineering team before.</p>
+      <p class="hero-matter reveal">Not a tutorial. Not a hackathon project. A deployed, working product - designed,
+        architected, and shipped by students who had never worked in a real engineering team before.</p>
 
       <div class="hero-cta-centered reveal">
         <button class="btn-vibrant-large" onclick="location.href='apply.html'">Apply for Cohort One</button>
@@ -79,24 +89,50 @@
        OVERVIEW + COHORT CARDS
        =========================== -->
   <section class="overview-section" id="overview">
-    <div class="container">
-      <!-- HEADER CONTENT (Centered) -->
-      <div class="overview-header reveal">
-        <h2>Overview</h2>
-        <p>LiftUp is a systems-first AI engineering model where students move beyond learning and into real execution.</p>
-        <p>They work in real environments, build end-to-end systems, and ship production-grade AI products. By focusing on how systems work—not just code—LiftUp turns students into builders. We don’t teach syntax. We teach systems.</p>
-        
-        <!-- Partner Section -->
-        <div class="overview-partners reveal">
-          <div class="partner-lead">Made by <span class="orionac-text">Orionac</span></div>
-          <div class="partner-support">
-            <span class="support-label">Supported by</span>
-            <div class="partner-logos">
-              <img src="google.png" alt="Google Cloud" class="partner-logo-img">
-              <img src="aws.png" alt="Amazon AWS" class="partner-logo-img">
-              <img src="nvidia_logo (1).png" alt="NVIDIA" class="partner-logo-img">
+    <div class="container overflow-visible">
+      <div class="overview-grid">
+        <!-- LEFT COLUMN: Content -->
+        <div class="overview-content reveal">
+          <div class="overview-tag">OVERVIEW</div>
+          <h2 class="overview-main-heading">Systematic <br><span class="orionac-text">Learning</span></h2>
+          <p class="overview-sub-heading">From learning AI to building real-world systems</p>
+
+          <div class="overview-text-blocks">
+            <div class="text-block">
+              <h4>Intro</h4>
+              <p>LiftUp is a systems-first AI engineering model where students move beyond learning and into real
+                execution.</p>
+            </div>
+
+            <div class="text-block">
+              <h4>Process</h4>
+              <p>They work in real environments, build end-to-end systems, and ship production-grade AI products. It is
+                not about exercises; it is about architecture.</p>
+            </div>
+
+            <div class="text-block">
+              <h4>Philosophy</h4>
+              <p>By focusing on how systems work—not just code—LiftUp turns students into builders. We don’t teach
+                syntax. We teach systems.</p>
             </div>
           </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Visual -->
+        <div class="overview-visual reveal">
+          <div class="system-visual-wrapper free-floating">
+            <img src="overview-visual-new.png" alt="AI System Overview" class="system-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- New Refined Attribution Section (Moved for global centering) -->
+      <div class="overview-attribution reveal" style="margin-top: 80px;">
+        <p class="attr-label">An initiative by a Company, backed by</p>
+        <div class="partner-logos-refined">
+          <img src="google.png" alt="Google Cloud" class="partner-mono">
+          <img src="aws.png" alt="Amazon AWS" class="partner-mono">
+          <img src="nvidia_logo (1).png" alt="NVIDIA" class="partner-mono">
         </div>
       </div>
     </div>
@@ -114,27 +150,27 @@
     <div class="container">
       <div class="participate-centered-wrap reveal">
         <div class="participate-header">
-          <h2>Who this is<br>built for</h2>
+          <h2>Who this is<br><span class="grad">built</span> for</h2>
         </div>
-        
+
         <div class="participate-grid">
           <div class="participate-card reveal">
             <div class="p-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5 0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5c0 .83-.67 1.5-1.5 1.5Z"/><path d="m2 22 7.6-7.6"/><path d="M20.9 4.6a2 2 0 0 0-2.8 0l-5.2 5.2a2 2 0 0 0 0 2.8l1 1a2 2 0 0 0 2.8 0l5.2-5.2a2 2 0 0 0 0-2.8Z"/><path d="m15.5 11.5 3 3a2 2 0 0 1 0 2.8l-2.5 2.5a2 2 0 0 1-2.8 0l-3-3"/><path d="M15 6 11 2 3.5 9.5 7 13Z"/></svg>
+              <img src="1.png" alt="Build" class="p-card-img">
             </div>
             <h3>For those who want to build, not just learn</h3>
             <p>If you’re tired of theory and want to create something real, this is where it starts.</p>
           </div>
           <div class="participate-card reveal">
             <div class="p-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14.71 12 2.5l2.67 9.17H20L12 21.5l-2.67-9.17H4Z"/></svg>
+              <img src="2.png" alt="Zero" class="p-card-img">
             </div>
             <h3>For those starting from zero</h3>
             <p>No coding background? Good. LiftUp teaches how systems work—so you can build from day one.</p>
           </div>
           <div class="participate-card reveal">
             <div class="p-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ship"><path d="M2 21h20"/><path d="M19.38 12h-1.38V8s0-2-1.5-2-1.5 2-1.5 2v4H9.5a.5.5 0 0 0-.5.5v2.5s0 2.5 2.5 2.5h6c2.5 0 2.5-2.5 2.5-2.5V12.5a.5.5 0 0 0-.5-.5Z"/><path d="M11 12v-3s0-2-1.5-2-1.5 2-1.5 2v3"/><path d="M7 12V9s0-2-1.5-2-1.5 2-1.5 2v3"/><path d="M4 12V9s0-2-1.5-2-1.5 2-1.5 2v3"/></svg>
+              <img src="3.png" alt="Real-world" class="p-card-img">
             </div>
             <h3>For those who want real-world experience early</h3>
             <p>Work like a real team, solve real problems, and ship something that actually runs.</p>
@@ -158,33 +194,42 @@
           <h2>The Opportunity</h2>
           <p class="opportunity-subtitle">Why institutions that act now will lead placements in 3 years</p>
         </div>
-        
+
         <div class="opportunity-editorial reveal">
-          <p>India's engineering institutions are at an inflection point. The companies that hire their graduates are changing — fast. The skills being demanded on Day 1 are no longer about syntax or frameworks. They are about product thinking, systems awareness, and the ability to ship. Institutions that bridge this gap first will see the placement outcomes that define their reputation for the next decade.</p>
+          <p>India's engineering institutions are at an inflection point. The companies that hire their graduates are
+            changing — fast. The skills being demanded on Day 1 are no longer about syntax or frameworks. They are about
+            product thinking, systems awareness, and the ability to ship. Institutions that bridge this gap first will
+            see the placement outcomes that define their reputation for the next decade.</p>
         </div>
 
         <div class="opportunity-grid">
           <div class="opportunity-card reveal">
             <h3>Placements are the #1 priority for institutions.</h3>
-            <p>Every institution's reputation is built on where its students go after graduation. Companies are increasingly filtering for students who have shipped real products — not just those who scored well. LiftUp directly improves that metric.</p>
+            <p>Every institution's reputation is built on where its students go after graduation. Companies are
+              increasingly filtering for students who have shipped real products — not just those who scored well.
+              LiftUp directly improves that metric.</p>
           </div>
           <div class="opportunity-card reveal">
             <h3>Industry is moving faster than curriculum can keep up.</h3>
-            <p>AI, product-led development, and startup-style execution are now mainstream in tech companies. Institutions that equip students with these skills become the preferred recruiting ground.</p>
+            <p>AI, product-led development, and startup-style execution are now mainstream in tech companies.
+              Institutions that equip students with these skills become the preferred recruiting ground.</p>
           </div>
           <div class="opportunity-card reveal">
             <h3>A new credibility signal is emerging.</h3>
-            <p>The institutions that run programs like LiftUp are signalling to the market: our graduates are ready. That signal compounds. It attracts better companies, better students, and stronger institutional brand.</p>
+            <p>The institutions that run programs like LiftUp are signalling to the market: our graduates are ready.
+              That signal compounds. It attracts better companies, better students, and stronger institutional brand.
+            </p>
           </div>
           <div class="opportunity-card reveal">
             <h3>This is not just about coding. It is about output.</h3>
-            <p>LiftUp does not replace the curriculum. It adds the one thing the curriculum cannot easily provide — the experience of shipping something real, under pressure, as a team.</p>
+            <p>LiftUp does not replace the curriculum. It adds the one thing the curriculum cannot easily provide — the
+              experience of shipping something real, under pressure, as a team.</p>
           </div>
         </div>
-        
 
-    <!-- Secondary Decorative Image -->
-    <img src="Gradient cubes in soft light-Photoroom.png" alt="" class="decorative-cubes-right" aria-hidden="true">
+
+        <!-- Secondary Decorative Image -->
+        <img src="Gradient cubes in soft light-Photoroom.png" alt="" class="decorative-cubes-right" aria-hidden="true">
       </div>
     </div>
   </section>
@@ -202,23 +247,29 @@
     </div>
 
     <div class="container" style="position: relative; z-index: 1;">
-      <h2 class="reveal" style="text-align: center; display: block; margin-bottom: 48px; color: #1e3a8a;">Cohort Zero Success</h2>
+      <h2 class="reveal" style="text-align: center; display: block; margin-bottom: 48px; color: #1e3a8a;">Cohort Zero
+        Success</h2>
 
       <div class="cz-grid">
         <!-- LEFT: Overview & Grad Card -->
         <div class="cz-overview-wrap reveal">
           <div class="cl-overview">
             <h3>Grand Success Story</h3>
-            <p>Our maiden voyage was a testament to systems thinking. 107 students, many with zero coding background, came together to build and ship a production-grade AI search engine in just 100 hours.</p>
+            <p>Our maiden voyage was a testament to systems thinking. 107 students, many with zero coding background,
+              came together to build and ship a production-grade AI search engine in just 100 hours.</p>
 
-            <div class="partner-badge" style="display: inline-flex; align-items: center; gap: 12px; background: rgba(30, 58, 138, 0.05); padding: 8px 16px; border-radius: 100px; border: 1px solid rgba(30, 58, 138, 0.1); margin-bottom: 24px;">
-              <span style="font-size: 12px; font-weight: 700; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.05em;">Partnered with</span>
+            <div class="partner-badge"
+              style="display: inline-flex; align-items: center; gap: 12px; background: rgba(30, 58, 138, 0.05); padding: 8px 16px; border-radius: 100px; border: 1px solid rgba(30, 58, 138, 0.1); margin-bottom: 24px;">
+              <span
+                style="font-size: 12px; font-weight: 700; color: #1e3a8a; text-transform: uppercase; letter-spacing: 0.05em;">Partnered
+                with</span>
               <img src="vishnu.png" alt="Vishnu Institute of Technology" style="height: 28px; object-fit: contain;">
               <span style="font-size: 14px; font-weight: 600; color: #333;">Vishnu Institute of Technology</span>
             </div>
 
             <div class="cz-grad-card">
-              <p>The results weren't just good—they were world-class. With 60% Perplexity parity and a 100% deployment rate, Cohort Zero set the standard for what's possible when students understand systems first.</p>
+              <p>The results weren't just good—they were world-class. With 60% Perplexity parity and a 100% deployment
+                rate, Cohort Zero set the standard for what's possible when students understand systems first.</p>
               <p>The full case study is available for institutional deep-dives.</p>
               <button onclick="location.href='cohort-zero.html'">Read Case Study</button>
             </div>
@@ -226,19 +277,25 @@
         </div>
 
         <!-- RIGHT: Cinematic Carousel (no extra card wrapping) -->
-        <div class="reveal" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="reveal"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
           <div class="cz-carousel-container">
             <button class="cz-carousel-nav prev" id="czPrev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
             </button>
             <div class="cz-carousel-viewport">
               <div class="cz-carousel-track" id="czTrack">
-                <div class="cz-slide active" data-name="SURYA" data-branch="CSE" data-clg="Vishnu Institute of Technology">
+                <div class="cz-slide active" data-name="SURYA" data-branch="CSE"
+                  data-clg="Vishnu Institute of Technology">
                   <div class="cz-video-box">
                     <div id="czPlayer1" data-video-id="jTb15z5QkN4"></div>
                   </div>
                 </div>
-                <div class="cz-slide" data-name="SABHIHA" data-branch="AI & ML" data-clg="Vishnu Institute of Technology">
+                <div class="cz-slide" data-name="SABHIHA" data-branch="AI & ML"
+                  data-clg="Vishnu Institute of Technology">
                   <div class="cz-video-box">
                     <div id="czPlayer2" data-video-id="NSqGgsaMTio"></div>
                   </div>
@@ -253,7 +310,8 @@
                     <div id="czPlayer4" data-video-id="Djj0yyZ1BaM"></div>
                   </div>
                 </div>
-                <div class="cz-slide" data-name="AKSHAYA" data-branch="AI & ML" data-clg="Vishnu Institute of Technology">
+                <div class="cz-slide" data-name="AKSHAYA" data-branch="AI & ML"
+                  data-clg="Vishnu Institute of Technology">
                   <div class="cz-video-box">
                     <div id="czPlayer5" data-video-id="CU_eW4laBhI"></div>
                   </div>
@@ -261,7 +319,10 @@
               </div>
             </div>
             <button class="cz-carousel-nav next" id="czNext">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
             </button>
           </div>
 
@@ -284,392 +345,424 @@
     <div class="container">
       <h2 class="reveal">Student Voices</h2>
 
-            <div class="marquee-wrapper">
+      <div class="marquee-wrapper">
         <div class="marquee-track">
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The workshop was very nice. I learned about how AI actually works and how we can use it to increase our productivity.The Workshop is very interactive and I learned so much. Thank you for the wonderful opportunity."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">DP</div>
-                <div>
-                  <div class="voice-name">Dhakshinya perumalla</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The workshop was very nice. I learned about how AI actually works and how we can
+                  use it to increase our productivity.The Workshop is very interactive and I learned so much. Thank you
+                  for the wonderful opportunity."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">DP</div>
+                  <div>
+                    <div class="voice-name">Dhakshinya perumalla</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The class is so nice that we can understand so easily. More interactive and learning class"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">GJ</div>
-                <div>
-                  <div class="voice-name">GONGADA JASWANTH</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The class is so nice that we can understand so easily. More interactive and
+                  learning class"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">GJ</div>
+                  <div>
+                    <div class="voice-name">GONGADA JASWANTH</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The sessions were very jovial and interactive, making the overall experience engaging and enjoyable. It also provided good exposure to a corporate-style learning environment. Overall, it was a valuable and insightful experience."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">D</div>
-                <div>
-                  <div class="voice-name">Diwakar</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The sessions were very jovial and interactive, making the overall experience
+                  engaging and enjoyable. It also provided good exposure to a corporate-style learning environment.
+                  Overall, it was a valuable and insightful experience."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">D</div>
+                  <div>
+                    <div class="voice-name">Diwakar</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The GenAI training program was very insightful and informative. I learned many valuable concepts and practical ideas about Generative AI. The sessions were clear and easy to understand. Overall, it was a great learning experience. 🚀"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">AL</div>
-                <div>
-                  <div class="voice-name">L. Amara Lokesh</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The GenAI training program was very insightful and informative. I learned many
+                  valuable concepts and practical ideas about Generative AI. The sessions were clear and easy to
+                  understand. Overall, it was a great learning experience. 🚀"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">AL</div>
+                  <div>
+                    <div class="voice-name">L. Amara Lokesh</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The classes were so interactive and helped us overcome our Shyness and fear of speaking.It helped us in gaining confidence. The sessions were good and gained knowledge on Gen AI topics.Doing practicals on what we learnt really helped us in understanding them better. Rishi sir teaching was good. He explained the topics again if anyone could not understand.He is friendly and supportive."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">K</div>
-                <div>
-                  <div class="voice-name">K.Sujitha</div>
-                  <div class="voice-role">AI&ML</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The classes were so interactive and helped us overcome our Shyness and fear of
+                  speaking.It helped us in gaining confidence. The sessions were good and gained knowledge on Gen AI
+                  topics.Doing practicals on what we learnt really helped us in understanding them better. Rishi sir
+                  teaching was good. He explained the topics again if anyone could not understand.He is friendly and
+                  supportive."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">K</div>
+                  <div>
+                    <div class="voice-name">K.Sujitha</div>
+                    <div class="voice-role">AI&ML</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Overall great experience learnt new things"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">H</div>
-                <div>
-                  <div class="voice-name">Hehram</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"Overall great experience learnt new things"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">H</div>
+                  <div>
+                    <div class="voice-name">Hehram</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"It was a pleasing session I learnt a lot that I am not even aware of and sir helped alot to know about it and also used manytools that made our work easier ...also got exposure to many more platforms where we can know and learn things...overall it was a great experience"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">AT</div>
-                <div>
-                  <div class="voice-name">Abdul Thafel</div>
-                  <div class="voice-role">CS&BS</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"It was a pleasing session I learnt a lot that I am not even aware of and sir
+                  helped alot to know about it and also used manytools that made our work easier ...also got exposure to
+                  many more platforms where we can know and learn things...overall it was a great experience"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">AT</div>
+                  <div>
+                    <div class="voice-name">Abdul Thafel</div>
+                    <div class="voice-role">CS&BS</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Never before ever after session.Mentor Rishi sir is too good.I have attended many workshops like this but this workshop is on my top priority as there are more practicals than theoretical classes"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">KN</div>
-                <div>
-                  <div class="voice-name">K Naga Sai Pavani</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"Never before ever after session.Mentor Rishi sir is too good.I have attended many
+                  workshops like this but this workshop is on my top priority as there are more practicals than
+                  theoretical classes"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">KN</div>
+                  <div>
+                    <div class="voice-name">K Naga Sai Pavani</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful for students to build projects. Thank you for this kind of workshop"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">KG</div>
-                <div>
-                  <div class="voice-name">Kanala Geetha Pranathi</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful
+                  for students to build projects. Thank you for this kind of workshop"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">KG</div>
+                  <div>
+                    <div class="voice-name">Kanala Geetha Pranathi</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful for students to build projects. Thank you for this kind of workshop."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">GG</div>
-                <div>
-                  <div class="voice-name">Gude Gopi Krishna</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful
+                  for students to build projects. Thank you for this kind of workshop."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">GG</div>
+                  <div>
+                    <div class="voice-name">Gude Gopi Krishna</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The classes helped me understand how AI can assist in coding, problem solving. Overall, the program enhanced my knowledge about modern AI technologies and was a valuable learning experience."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">MH</div>
-                <div>
-                  <div class="voice-name">Merla Hemanth satyanarayana</div>
-                  <div class="voice-role">AI&DS</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The classes helped me understand how AI can assist in coding, problem solving.
+                  Overall, the program enhanced my knowledge about modern AI technologies and was a valuable learning
+                  experience."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">MH</div>
+                  <div>
+                    <div class="voice-name">Merla Hemanth satyanarayana</div>
+                    <div class="voice-role">AI&DS</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Sir, the Generative AI sessions were very informative and engaging. The way you explained the concepts made it easy for us to understand even complex topics. The projects you assigned were especially helpful because they gave us hands-on experience and showed us how Generative AI can be applied in real-world applications. Through these projects, we were able to improve our practical skills and understand how AI tools can be integrated into development. Overall, this learning experience was very valuable and inspiring for us. It helped us gain confidence in using AI technologies and also motivated us to explore more in the field of artificial intelligence. Thank you for guiding us and providing such a great opportunity to learn and work on practical GenAI projects."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">PM</div>
-                <div>
-                  <div class="voice-name">PALLA MURALI KRISHNA</div>
-                  <div class="voice-role">AI&ML</div>
+<-- Testimonial removed -->
+
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The workshop was very nice. I learned about how AI actually works and how we can
+                  use it to increase our productivity.The Workshop is very interactive and I learned so much. Thank you
+                  for the wonderful opportunity."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">DP</div>
+                  <div>
+                    <div class="voice-name">Dhakshinya perumalla</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The workshop was very nice. I learned about how AI actually works and how we can use it to increase our productivity.The Workshop is very interactive and I learned so much. Thank you for the wonderful opportunity."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">DP</div>
-                <div>
-                  <div class="voice-name">Dhakshinya perumalla</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The class is so nice that we can understand so easily. More interactive and
+                  learning class"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">GJ</div>
+                  <div>
+                    <div class="voice-name">GONGADA JASWANTH</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The class is so nice that we can understand so easily. More interactive and learning class"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">GJ</div>
-                <div>
-                  <div class="voice-name">GONGADA JASWANTH</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The sessions were very jovial and interactive, making the overall experience
+                  engaging and enjoyable. It also provided good exposure to a corporate-style learning environment.
+                  Overall, it was a valuable and insightful experience."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">D</div>
+                  <div>
+                    <div class="voice-name">Diwakar</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The sessions were very jovial and interactive, making the overall experience engaging and enjoyable. It also provided good exposure to a corporate-style learning environment. Overall, it was a valuable and insightful experience."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">D</div>
-                <div>
-                  <div class="voice-name">Diwakar</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The GenAI training program was very insightful and informative. I learned many
+                  valuable concepts and practical ideas about Generative AI. The sessions were clear and easy to
+                  understand. Overall, it was a great learning experience. 🚀"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">AL</div>
+                  <div>
+                    <div class="voice-name">L. Amara Lokesh</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The GenAI training program was very insightful and informative. I learned many valuable concepts and practical ideas about Generative AI. The sessions were clear and easy to understand. Overall, it was a great learning experience. 🚀"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">AL</div>
-                <div>
-                  <div class="voice-name">L. Amara Lokesh</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The classes were so interactive and helped us overcome our Shyness and fear of
+                  speaking.It helped us in gaining confidence. The sessions were good and gained knowledge on Gen AI
+                  topics.Doing practicals on what we learnt really helped us in understanding them better. Rishi sir
+                  teaching was good. He explained the topics again if anyone could not understand.He is friendly and
+                  supportive."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">K</div>
+                  <div>
+                    <div class="voice-name">K.Sujitha</div>
+                    <div class="voice-role">AI&ML</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The classes were so interactive and helped us overcome our Shyness and fear of speaking.It helped us in gaining confidence. The sessions were good and gained knowledge on Gen AI topics.Doing practicals on what we learnt really helped us in understanding them better. Rishi sir teaching was good. He explained the topics again if anyone could not understand.He is friendly and supportive."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">K</div>
-                <div>
-                  <div class="voice-name">K.Sujitha</div>
-                  <div class="voice-role">AI&ML</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"Overall great experience learnt new things"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">H</div>
+                  <div>
+                    <div class="voice-name">Hehram</div>
+                    <div class="voice-role">CSE</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Overall great experience learnt new things"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">H</div>
-                <div>
-                  <div class="voice-name">Hehram</div>
-                  <div class="voice-role">CSE</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"It was a pleasing session I learnt a lot that I am not even aware of and sir
+                  helped alot to know about it and also used manytools that made our work easier ...also got exposure to
+                  many more platforms where we can know and learn things...overall it was a great experience"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">AT</div>
+                  <div>
+                    <div class="voice-name">Abdul Thafel</div>
+                    <div class="voice-role">CS&BS</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"It was a pleasing session I learnt a lot that I am not even aware of and sir helped alot to know about it and also used manytools that made our work easier ...also got exposure to many more platforms where we can know and learn things...overall it was a great experience"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">AT</div>
-                <div>
-                  <div class="voice-name">Abdul Thafel</div>
-                  <div class="voice-role">CS&BS</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"Never before ever after session.Mentor Rishi sir is too good.I have attended many
+                  workshops like this but this workshop is on my top priority as there are more practicals than
+                  theoretical classes"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">KN</div>
+                  <div>
+                    <div class="voice-name">K Naga Sai Pavani</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Never before ever after session.Mentor Rishi sir is too good.I have attended many workshops like this but this workshop is on my top priority as there are more practicals than theoretical classes"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">KN</div>
-                <div>
-                  <div class="voice-name">K Naga Sai Pavani</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful
+                  for students to build projects. Thank you for this kind of workshop"</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">KG</div>
+                  <div>
+                    <div class="voice-name">Kanala Geetha Pranathi</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #F09BBE);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful for students to build projects. Thank you for this kind of workshop"</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">KG</div>
-                <div>
-                  <div class="voice-name">Kanala Geetha Pranathi</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful
+                  for students to build projects. Thank you for this kind of workshop."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">GG</div>
+                  <div>
+                    <div class="voice-name">Gude Gopi Krishna</div>
+                    <div class="voice-role">IT</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #EA4335, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"More practicals less theoretical classes. This kind of practice is very helpful for students to build projects. Thank you for this kind of workshop."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">GG</div>
-                <div>
-                  <div class="voice-name">Gude Gopi Krishna</div>
-                  <div class="voice-role">IT</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"The classes helped me understand how AI can assist in coding, problem solving.
+                  Overall, the program enhanced my knowledge about modern AI technologies and was a valuable learning
+                  experience."</p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">MH</div>
+                  <div>
+                    <div class="voice-name">Merla Hemanth satyanarayana</div>
+                    <div class="voice-role">AI&DS</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #4285F4, #4B31E3);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"The classes helped me understand how AI can assist in coding, problem solving. Overall, the program enhanced my knowledge about modern AI technologies and was a valuable learning experience."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">MH</div>
-                <div>
-                  <div class="voice-name">Merla Hemanth satyanarayana</div>
-                  <div class="voice-role">AI&DS</div>
+          <div class="voice-card">
+            <div class="voice-card-inner">
+              <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
+              <div class="voice-card-body">
+                <div class="voice-quote-mark">"</div>
+                <p class="voice-text">"Sir, the Generative AI sessions were very informative and engaging. The way you
+                  explained the concepts made it easy for us to understand even complex topics. The projects you
+                  assigned were especially helpful because they gave us hands-on experience and showed us how Generative
+                  AI can be applied in real-world applications. Through these projects, we were able to improve our
+                  practical skills and understand how AI tools can be integrated into development. Overall, this
+                  learning experience was very valuable and inspiring for us. It helped us gain confidence in using AI
+                  technologies and also motivated us to explore more in the field of artificial intelligence. Thank you
+                  for guiding us and providing such a great opportunity to learn and work on practical GenAI projects."
+                </p>
+                <div class="voice-attr">
+                  <div class="voice-avatar">PM</div>
+                  <div>
+                    <div class="voice-name">PALLA MURALI KRISHNA</div>
+                    <div class="voice-role">AI&ML</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="voice-card">
-          <div class="voice-card-inner">
-            <div class="voice-card-fill" style="background: linear-gradient(135deg, #34A853, #FBBC04);"></div>
-            <div class="voice-card-body">
-              <div class="voice-quote-mark">"</div>
-              <p class="voice-text">"Sir, the Generative AI sessions were very informative and engaging. The way you explained the concepts made it easy for us to understand even complex topics. The projects you assigned were especially helpful because they gave us hands-on experience and showed us how Generative AI can be applied in real-world applications. Through these projects, we were able to improve our practical skills and understand how AI tools can be integrated into development. Overall, this learning experience was very valuable and inspiring for us. It helped us gain confidence in using AI technologies and also motivated us to explore more in the field of artificial intelligence. Thank you for guiding us and providing such a great opportunity to learn and work on practical GenAI projects."</p>
-              <div class="voice-attr">
-                <div class="voice-avatar">PM</div>
-                <div>
-                  <div class="voice-name">PALLA MURALI KRISHNA</div>
-                  <div class="voice-role">AI&ML</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>
@@ -690,19 +783,39 @@
           <div class="transform-card-content">
             <ul>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-cross">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
                 No prior coding knowledge
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-cross">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
                 Limited exposure to product or systems thinking
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-cross">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
                 No hands-on experience shipping products
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-cross"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-cross">
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
                 Basic understanding of how tech products works
               </li>
             </ul>
@@ -717,19 +830,35 @@
           <div class="transform-card-content">
             <ul>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-check">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 Understands how systems connect
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-check">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 Shipped a live AI product end-to-end
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-check">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 Worked in a real sprint environment
               </li>
               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="icon-check"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon-check">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
                 Debugged and solved real production problems
               </li>
             </ul>
@@ -738,7 +867,39 @@
       </div>
     </div>
     <!-- Decorative Ribbon -->
-    <img src="Flowing glass ribbon with color gradient-Photoroom.png" alt="" class="decorative-ribbon" aria-hidden="true">
+    <img src="Flowing glass ribbon with color gradient-Photoroom.png" alt="" class="decorative-ribbon"
+      aria-hidden="true">
+  </section>
+
+  <!-- ===========================
+       MENTORS — Premium Focus
+       =========================== -->
+  <section class="mentors-section" id="mentors">
+    <div class="container overflow-visible">
+      <div class="mentors-featured-grid">
+        <!-- LEFT: Mentor Image Block (No Image) -->
+        <div class="mentors-visual reveal">
+          <div class="mentor-hero-card" style="background: linear-gradient(135deg, rgba(160, 124, 254, 0.1), rgba(160, 124, 254, 0.02));">
+            <!-- Image removed per request -->
+          </div>
+          <div class="mentors-cta-wrapper" style="text-align: center; margin-top: 24px;">
+            <button class="btn-blue mentors-btn" onclick="location.href='mentors.html'">View Mentors</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: Content -->
+        <div class="mentors-content reveal">
+          <div class="overview-tag">MENTORS</div>
+          <h2 class="mentors-main-heading">Learn from people who have built <span class="orionac-text">real systems</span></h2>
+          <p class="mentors-body-text">LiftUp is guided by practitioners who have worked on production-grade AI systems and understand what it takes to move from theory to execution. Our mentors bring hands-on experience across building, scaling, and deploying intelligent systems in real environments.</p>
+
+          <div class="mentor-feature-block">
+            <h3 class="mentor-feature-name">Rishi <span class="mentor-feature-role">— AI Engineer</span></h3>
+            <p class="mentor-feature-bio">Rishi works at the intersection of machine learning and real-world system design, focusing on building scalable AI solutions and translating complex models into production-ready systems. His work emphasizes execution, reliability, and practical impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ===========================
@@ -764,20 +925,33 @@
       <div class="tl-labels reveal">
         <div>
           <div class="tl-label-name">
-            Cohort Zero 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34A853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><polyline points="20 6 9 17 4 12"/></svg>
+            Cohort Zero
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="#34A853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              style="display:inline-block; vertical-align:middle; margin-left:4px;">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
           </div>
           <span class="tl-label-date">Completed</span>
         </div>
-        <div><div class="tl-label-name">Cohort One</div><span class="tl-label-date">Q2 2026</span></div>
-        <div><div class="tl-label-name">Cohort 3</div><span class="tl-label-date">Q3 2026</span></div>
-        <div><div class="tl-label-name">.......</div><span class="tl-label-date">Expansion</span></div>
-        <div><div class="tl-label-name">Cohort 100</div><span class="tl-label-date">Goal 2026</span></div>
+        <div>
+          <div class="tl-label-name">Cohort One</div><span class="tl-label-date">Q2 2026</span>
+        </div>
+        <div>
+          <div class="tl-label-name">Cohort 3</div><span class="tl-label-date">Q3 2026</span>
+        </div>
+        <div>
+          <div class="tl-label-name">.......</div><span class="tl-label-date">Expansion</span>
+        </div>
+        <div>
+          <div class="tl-label-name">Cohort 100</div><span class="tl-label-date">Goal 2026</span>
+        </div>
       </div>
 
       <div class="tl-cards reveal">
         <div class="tl-card">
-          <p><strong>Objective:</strong> Prove the hypothesis — if students understand how systems work, anyone can ship a real product. 107 first-years with zero coding experience built a live AI search engine in 4 days.</p>
+          <p><strong>Objective:</strong> Prove the hypothesis — if students understand how systems work, anyone can ship
+            a real product. 107 first-years with zero coding experience built a live AI search engine in 4 days.</p>
           <div class="tl-card-grid">
             <div>
               <h4>1. Selection</h4>
@@ -801,7 +975,9 @@
           </div>
         </div>
         <div class="tl-card tl-card-side">
-          <p>The Builder Network connects top performers from all cohorts with real startups hiring across India.<br><br>Teams that consistently ship gain visibility beyond their cohort.<br><br>This is the long-term play — a pipeline from campus to company, validated by output, not degrees.</p>
+          <p>The Builder Network connects top performers from all cohorts with real startups hiring across
+            India.<br><br>Teams that consistently ship gain visibility beyond their cohort.<br><br>This is the long-term
+            play — a pipeline from campus to company, validated by output, not degrees.</p>
         </div>
       </div>
     </div>
@@ -812,23 +988,26 @@
   <!-- ===========================
        COHORT ONE IS LIVE — Green section
        =========================== -->
-   <section class="cohort-live-section">
+  <section class="cohort-live-section">
     <!-- Spiral Decoration -->
     <div class="cl-spiral-decoration">
       <div class="cl-spiral-bg"></div>
     </div>
-    
+
     <div class="container" style="position: relative; z-index: 1;">
       <h2 class="reveal green-grad">Cohort One is Live</h2>
 
       <div class="cohort-live-grid">
         <div class="cl-overview reveal">
           <h3>What's different</h3>
-          <p>Cohort One expands the model that Cohort Zero validated. More students, more branches, refined methodology. The hypothesis is proven — now we scale.</p>
+          <p>Cohort One expands the model that Cohort Zero validated. More students, more branches, refined methodology.
+            The hypothesis is proven — now we scale.</p>
 
           <div class="cl-grad-card">
-            <p>The application process is live. If your institution wants to run LiftUp, the MOU framework is ready. Every student who applies commits to shipping — no passengers.</p>
-            <p>Contact us at support@orionac.in to begin the partnership process. We handle everything — from student selection to product deployment.</p>
+            <p>The application process is live. If your institution wants to run LiftUp, the MOU framework is ready.
+              Every student who applies commits to shipping — no passengers.</p>
+            <p>Contact us at support@orionac.in to begin the partnership process. We handle everything — from student
+              selection to product deployment.</p>
             <button onclick="location.href='apply.html'">Apply Now</button>
           </div>
         </div>
@@ -870,51 +1049,97 @@
         <div class="faq-item">
           <button class="faq-q">
             <span>What is LiftUp by Orionac?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">LiftUp is a focused, immersive sprint program designed for first-year college students. In 4–5 days, students go from zero coding experience to shipping a live AI product, learning systems thinking instead of syntax.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">LiftUp is a focused, immersive sprint program designed for first-year college
+              students. In 4–5 days, students go from zero coding experience to shipping a live AI product, learning
+              systems thinking instead of syntax.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>Do students need prior coding experience?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Absolutely not. Cohort Zero was designed specifically for first-year students with zero coding background. LiftUp teaches systems thinking first — once students understand how systems connect, the code follows naturally.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">Absolutely not. Cohort Zero was designed specifically for first-year students with
+              zero coding background. LiftUp teaches systems thinking first — once students understand how systems
+              connect, the code follows naturally.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>Is there any participation fee?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">No. LiftUp is completely free for students. The program runs under a formal MOU with the institution, so all costs are handled at the institutional level.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">No. LiftUp is completely free for students. The program runs under a formal MOU
+              with the institution, so all costs are handled at the institutional level.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>What tools did Cohort Zero use?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Cohort Zero built entirely on Google Stitch (AI app builder) and Google Antigravity (deployment infrastructure). These are production-grade tools, not educational toys.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">Cohort Zero built entirely on Google Stitch (AI app builder) and Google Antigravity
+              (deployment infrastructure). These are production-grade tools, not educational toys.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>How does Orionac work with institutions?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">We sign a formal MOU before the program begins. Admin clearance, faculty presence, on-campus access, and a formal graduation ceremony. The program runs on the institution's premises with their full support.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">We sign a formal MOU before the program begins. Admin clearance, faculty presence,
+              on-campus access, and a formal graduation ceremony. The program runs on the institution's premises with
+              their full support.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>What product did Cohort Zero build?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">An AI-powered search engine modelled on Perplexity. It pulls live data from the web, processes it through a large language model, and returns summarised, cited answers in real time. Every team had a live, deployed product by Day 4.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">An AI-powered search engine modelled on Perplexity. It pulls live data from the
+              web, processes it through a large language model, and returns summarised, cited answers in real time.
+              Every team had a live, deployed product by Day 4.</div>
+          </div>
         </div>
         <div class="faq-item">
           <button class="faq-q">
             <span>How do I apply for Cohort One?</span>
-            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="faq-chevron"><svg viewBox="0 0 12 8" fill="none">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
           </button>
-          <div class="faq-a"><div class="faq-a-inner">Reach out at support@orionac.in. If you're an institution, we'll walk you through the MOU process. If you're a student, loop in your placement cell or department head.</div></div>
+          <div class="faq-a">
+            <div class="faq-a-inner">Reach out at support@orionac.in. If you're an institution, we'll walk you through
+              the MOU process. If you're a student, loop in your placement cell or department head.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -960,18 +1185,35 @@
         <div class="footer-cta-col">
           <h4 class="footer-info-title">WANT TO RUN LIFTUP AT YOUR INSTITUTION?</h4>
           <a href="apply.html" class="footer-large-link underline-link">APPLY FOR PARTNERSHIP →</a>
-          
+
           <div class="footer-social-wrap">
             <h4 class="footer-sub-label">FOLLOW US</h4>
             <div class="footer-minimal-socials">
               <a href="https://www.linkedin.com/company/orionac" target="_blank" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="social-icon">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
               </a>
               <a href="https://www.instagram.com/orionac4u" target="_blank" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="social-icon">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
               </a>
               <a href="mailto:support@orionac.in" aria-label="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="social-icon">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
               </a>
             </div>
           </div>
@@ -989,4 +1231,5 @@
 
 
 </body>
+
 </html>
