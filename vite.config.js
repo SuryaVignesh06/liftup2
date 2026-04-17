@@ -8,6 +8,8 @@ export default defineConfig({
         main: 'index.html',
         cohortZero: 'cohort-zero.html',
         apply: 'apply.html',
+        mentors: 'mentors.html',
+        mentorRishi: 'mentor-rishi.html',
       },
     },
   },
