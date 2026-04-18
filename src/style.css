@@ -858,25 +858,33 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Centered as requested */
-  gap: 60px;
-  /* Increased gap for better visibility */
+  gap: 72px;
 }
 
 .partner-mono {
-  height: 48px; /* Slightly reduced height for better balance */
+  height: 80px;
   width: auto;
-  max-width: 160px; /* Limit width to keep them proportional */
+  max-width: 220px;
   object-fit: contain;
   filter: none;
   opacity: 1;
-  /* Full visibility */
   transition: all 0.4s ease;
 }
 
 .partner-mono:hover {
   filter: grayscale(0) contrast(1) brightness(1);
   opacity: 1;
+  transform: scale(1.05);
+}
+
+img[alt="NVIDIA"] {
+  height: 60px; /* Make NVIDIA slightly smaller than the others (80px) */
+}
+
+@media (max-width: 600px) {
+  img[alt="NVIDIA"] {
+    height: 22px; /* Scale down proportionally for mobile (base is 30px) */
+  }
 }
 
 /* Right Column Visual */
@@ -942,11 +950,12 @@ button {
 @media (max-width: 600px) {
   .partner-logos-refined {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 32px;
   }
 
   .partner-mono {
-    height: 18px;
+    height: 30px;
+    max-width: 120px;
   }
 }
 
