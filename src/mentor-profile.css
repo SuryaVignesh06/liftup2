@@ -10,9 +10,9 @@
 :root {
   --hp-bg: #ffffff;
   --hp-surface: #f5f5f5;
-  --hp-text: #161F26;
-  --hp-text-muted: #646464;
-  --hp-text-dim: #aaaaaa;
+  --hp-text: #000000;
+  --hp-text-muted: #000000;
+  --hp-text-dim: #000000;
   --hp-border: rgba(0,0,0,0.06);
   --hp-border-hover: rgba(0,0,0,0.18);
 
@@ -335,7 +335,7 @@
   color: var(--hp-text);
   line-height: 1.0;
   margin-bottom: 12px;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .hp-thinking-line.hp-thinking-last {
