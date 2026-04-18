@@ -864,9 +864,10 @@ button {
 }
 
 .partner-mono {
-  height: 80px;
-  /* Significantly bigger as requested */
+  height: 48px; /* Slightly reduced height for better balance */
   width: auto;
+  max-width: 160px; /* Limit width to keep them proportional */
+  object-fit: contain;
   filter: none;
   opacity: 1;
   /* Full visibility */
