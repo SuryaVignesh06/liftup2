@@ -3469,12 +3469,13 @@ button {
 }
 
 .apply-form-glass {
-  background: #ffffff;
-  border: 3px solid #000;
-  border-radius: 4px;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(135deg, var(--vibrant-purple), var(--vibrant-orange)) border-box;
+  border: 4px solid transparent;
+  border-radius: 16px;
   padding: 60px;
   position: relative;
-  box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
@@ -3488,8 +3489,11 @@ button {
 .step-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 32px;
-  color: var(--g-green);
-  opacity: 0.3;
+  background: linear-gradient(135deg, var(--vibrant-purple), var(--vibrant-orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   line-height: 1;
 }
 
