@@ -130,10 +130,10 @@ body.hype-theme::before {
 }
 
 .hype-gallery-eyebrow {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
-  font-size: 11px;
-  letter-spacing: 0.3em;
+  font-size: 14px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   margin-bottom: 32px;
