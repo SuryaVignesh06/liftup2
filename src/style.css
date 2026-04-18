@@ -3872,3 +3872,206 @@ button {
     gap: 40px;
   }
 }
+
+/* =========================================
+   MENTOR TEASER SECTION (index.html)
+   ========================================= */
+.mentors-section-site {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: #0a0a0a;
+  padding: 100px 0;
+}
+.mentors-site-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 768px) {
+  .mentors-site-container { padding: 0 24px; }
+}
+
+.mentors-site-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.mentors-site-eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+.mentors-site-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+}
+
+.mentors-site-h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.2;
+  max-width: 560px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .mentors-site-h2 { font-size: 28px; }
+}
+
+.mentors-site-sub {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgba(255,255,255,0.45);
+  max-width: 460px;
+}
+
+.mentors-site-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+}
+@media (max-width: 768px) {
+  .mentors-site-grid { grid-template-columns: 1fr; }
+}
+
+.mentor-teaser-card {
+  display: block;
+  text-decoration: none;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.07);
+  padding: 40px 36px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: border-color 300ms ease, transform 300ms ease;
+}
+.mentor-teaser-card:hover {
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.teaser-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.teaser-avatar-fallback {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #181818;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.teaser-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.teaser-role {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-top: 5px;
+}
+
+.teaser-rule {
+  margin: 24px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.teaser-bio {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.6;
+}
+
+.teaser-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.teaser-tag {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 5px 11px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.35);
+  border-radius: 0;
+}
+
+.teaser-bottom {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teaser-bottom span:first-child {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+}
+.teaser-arrow {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255,255,255,0.3);
+  transition: transform 300ms ease, color 300ms;
+}
+.mentor-teaser-card:hover .teaser-arrow {
+  transform: translateX(4px);
+  color: #fff;
+}
+
+.mentors-site-cta {
+  margin-top: 48px;
+  text-align: center;
+}
+.mentors-cta-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 250ms, border-color 250ms;
+  text-decoration: none;
+}
+.mentors-cta-btn:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.5);
+}

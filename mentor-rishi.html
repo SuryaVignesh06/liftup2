@@ -4,25 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishi - Mentor | LiftUp by Orionac</title>
+  <title>Rishi - AI Engineer | LiftUp by Orionac</title>
   <meta name="description" content="AI Engineer working on real-world systems, scalable AI solutions, and production-grade deployments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Poppins:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;700&family=Bebas+Neue&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/style.css"> <!-- Fallback for header/footer classes if needed -->
+  <link rel="stylesheet" href="/src/mentor-profile.css"> <!-- New Dark Theme -->
   <script type="module" src="/src/main.ts"></script>
 </head>
 
-<body>
+<body class="mentor-profile-page">
 
   <!-- ===========================
-       VIBRANT TOP TICKER
+       TOP TICKER (DARK OVERRIDE)
        =========================== -->
-  <div class="top-ticker">
+  <div class="top-ticker" style="background: rgba(255,255,255,0.05); color: #8b8b93;">
     <div class="ticker-track">
-      <span>107 students. 4 days. One live AI product.</span>
-      <span>107 students. 4 days. One live AI product.</span>
       <span>107 students. 4 days. One live AI product.</span>
       <span>107 students. 4 days. One live AI product.</span>
       <span>107 students. 4 days. One live AI product.</span>
@@ -34,164 +33,163 @@
        TOP CTA BAR
        =========================== -->
   <div class="top-cta-bar">
-    <div class="container top-bar-inner">
+    <div class="mentor-container top-bar-inner">
       <div class="brand-logo" style="cursor:pointer;" onclick="location.href='index.html'">LIFT<span class="grad">UP</span></div>
       <nav class="header-nav">
         <a href="mentors.html" class="nav-btn">Mentors Gallery</a>
         <a href="index.html#overview" class="nav-btn">Overview</a>
-        <a href="index.html#cohorts" class="nav-btn">Cohorts</a>
-        <a href="cohort-zero.html" class="nav-btn"
-          style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
       </nav>
       <div class="header-right-group">
-        <div class="live-status-badge" onclick="location.href='index.html#cohorts'">
-          <span class="pulse-dot"></span>
-          <span class="badge-text-prefix">COHORT 1 IS </span>LIVE
-        </div>
-        <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
+        <button class="btn-ticker-cta" style="background: #f5f5f7; color: #0d0d0f;" onclick="location.href='apply.html'">Apply Now</button>
       </div>
     </div>
   </div>
 
   <!-- ===========================
-       MENTOR PROFILE HERO
+       1. HERO SECTION
        =========================== -->
-  <section class="mentor-hero-section">
-    <div class="container">
-      <div class="mentor-hero-grid">
-        <div class="mentor-hero-image-wrapper" style="background: linear-gradient(135deg, rgba(160, 124, 254, 0.1), rgba(160, 124, 254, 0.02));">
-          <!-- Image removed per request -->
-        </div>
-        <div class="mentor-hero-content">
-          <h1>Rishi</h1>
-          <p class="mentor-hero-role">AI Engineer</p>
-          <p class="mentor-hero-bio">Rishi is an experienced AI engineer working on real-world systems, focusing on scalable AI solutions and production-grade deployments. He helps bridge the gap between academic theory and practical execution.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===========================
-       MENTOR DETAILS & BACKGROUND
-       =========================== -->
-  <section class="mentor-details-section">
-    <div class="container">
-      <div class="mentor-blocks-grid">
+  <section class="mentor-hero">
+    <div class="mentor-container mentor-hero-grid">
+      <div class="mentor-hero-text">
+        <h1 class="reveal-on-scroll">not here to teach.<br>here to build.</h1>
         
-        <div class="mentor-block">
-          <h2>Experience</h2>
-          <ul>
-            <li>Led the development of a unified GenAI search architecture processing millions of queries daily.</li>
-            <li>Architected zero-downtime deployment pipelines for large language model integration.</li>
-            <li>Mentored 50+ junior developers transitioning from web engineering to AI systems design.</li>
-          </ul>
+        <div class="mentor-hero-identity reveal-on-scroll delay-100">
+          <div class="mentor-hero-name">Rishi</div>
+          <div class="mentor-hero-role">AI Engineer — builds scalable AI systems</div>
         </div>
 
-        <div class="mentor-block">
-          <h2>Expertise</h2>
-          <ul>
-            <li>AI Systems Architecture & Infrastructure</li>
-            <li>Machine Learning Engineering & MLOps</li>
-            <li>Vector Database Design & Optimization</li>
-            <li>Production-Grade RAG Systems</li>
-          </ul>
+        <div class="mentor-tags reveal-on-scroll delay-200">
+          <span class="mentor-tag">AI Systems</span>
+          <span class="mentor-tag">ML Engineering</span>
+          <span class="mentor-tag">Production AI</span>
+          <span class="mentor-tag">Systems Thinking</span>
         </div>
-
-        <div class="mentor-block">
-          <h2>Contributions at LiftUp</h2>
-          <ul>
-            <li>Primary Mentor for Cohort Zero, guiding 107 students.</li>
-            <li>Designed the 'Systems-First' curriculum module focusing on practical deployment over syntax.</li>
-            <li>Provides code reviews and architectural validation for student projects.</li>
-          </ul>
+      </div>
+      
+      <div class="mentor-hero-image-wrapper reveal-on-scroll delay-300">
+        <div class="mentor-hero-image">
+          <!-- Default to placeholder if specific image isn't available -->
+          <img src="/mentor-placeholder.png" alt="Rishi - AI Engineer" class="mentor-hero-img-element" onerror="this.src='/1.png';">
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ===========================
-       FOOTER
+       2. /LIVE SECTION
        =========================== -->
-  <footer class="minimal-footer">
-    <div class="container">
-      <div class="footer-main-grid">
-        <!-- Column 1: Headline -->
-        <div class="footer-headline-col">
-          <h2 class="footer-big-text">
-            India's first AI <br> product cohort<span class="trademark">®</span>
-          </h2>
-        </div>
+  <section class="mentor-section">
+    <div class="mentor-container">
+      <div class="section-label reveal-on-scroll">/live</div>
+      <ul class="live-list">
+        <li class="reveal-on-scroll delay-100"><span class="arrow">→</span> building production-grade AI systems</li>
+        <li class="reveal-on-scroll delay-200"><span class="arrow">→</span> testing scalable ML pipelines</li>
+        <li class="reveal-on-scroll delay-300"><span class="arrow">→</span> exploring real-world deployment challenges</li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- Column 2: REACH US -->
-        <div class="footer-info-col">
-          <h4 class="footer-sub-label">REACH US</h4>
-          <a href="mailto:support@orionac.in" class="footer-contact-link">support@orionac.in</a>
-          <p class="footer-address">
-            Orionac Systems Thinking Group<br>
-            Andhra Pradesh, India
-          </p>
-          <a href="mailto:support@orionac.in" class="footer-action-link">GET IN TOUCH ↗</a>
-        </div>
-
-        <!-- Column 3: PROGRAM -->
-        <div class="footer-info-col">
-          <h4 class="footer-sub-label">PROGRAM</h4>
-          <nav class="footer-vertical-nav">
-            <a href="index.html#overview">OVERVIEW</a>
-            <a href="index.html#cohorts">COHORTS</a>
-            <a href="index.html#outcomes">OUTCOMES</a>
-            <a href="cohort-zero.html">CASE STUDY</a>
-          </nav>
-          <a href="index.html#faq" class="footer-action-link">SEE FAQ ↗</a>
-        </div>
-
-        <!-- Column 4: PARTNER -->
-        <div class="footer-cta-col">
-          <h4 class="footer-info-title">WANT TO RUN LIFTUP AT YOUR INSTITUTION?</h4>
-          <a href="apply.html" class="footer-large-link underline-link">APPLY FOR PARTNERSHIP →</a>
-
-          <div class="footer-social-wrap">
-            <h4 class="footer-sub-label">FOLLOW US</h4>
-            <div class="footer-minimal-socials">
-              <a href="https://www.linkedin.com/company/orionac" target="_blank" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="social-icon">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect width="4" height="12" x="2" y="9" />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/orionac4u" target="_blank" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="social-icon">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-              </a>
-              <a href="mailto:support@orionac.in" aria-label="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="social-icon">
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-legal-row">
-        <p>© 2026 LIFTUP by ORIONAC. All rights reserved.</p>
-        <p>Built with purpose in India 🇮🇳</p>
+  <!-- ===========================
+       3. SYSTEM MAP SECTION
+       =========================== -->
+  <section class="mentor-section" style="background: rgba(255,255,255,0.01);">
+    <div class="mentor-container">
+      <div class="section-label reveal-on-scroll">/architecture</div>
+      <div class="system-map-container">
+        <div class="system-node reveal-on-scroll delay-100">AI models</div>
+        <div class="system-arrow reveal-on-scroll delay-100">↓</div>
+        <div class="system-node reveal-on-scroll delay-200">production systems</div>
+        <div class="system-arrow reveal-on-scroll delay-200">↓</div>
+        <div class="system-node reveal-on-scroll delay-300">scalable intelligence</div>
+        <div class="system-arrow reveal-on-scroll delay-300">↓</div>
+        <div class="system-node reveal-on-scroll delay-400">real-world applications</div>
       </div>
     </div>
-    <div class="footer-gradient-line"></div>
+  </section>
+
+  <!-- ===========================
+       4. /THINKING SECTION
+       =========================== -->
+  <section class="mentor-section">
+    <div class="mentor-container">
+      <div class="section-label reveal-on-scroll">/thinking</div>
+      
+      <div class="thinking-lines">
+        <div class="thinking-line reveal-on-scroll delay-100">systems over syntax</div>
+        <div class="thinking-line reveal-on-scroll delay-200">execution over theory</div>
+        <div class="thinking-line reveal-on-scroll delay-300">build first. refine later.</div>
+        <div class="thinking-line reveal-on-scroll delay-400">if it doesn’t scale, it doesn’t matter</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       5. /UNFILTERED SECTION
+       =========================== -->
+  <section class="mentor-section" style="background: rgba(10,10,12,0.5);">
+    <div class="mentor-container">
+      <div class="section-label reveal-on-scroll">/unfiltered</div>
+      
+      <div class="unfiltered-grid">
+        <div class="unfiltered-item reveal-on-scroll delay-100">
+          <div class="unfiltered-label">belief</div>
+          <div class="unfiltered-text">→ real learning happens in production</div>
+        </div>
+        
+        <div class="unfiltered-item reveal-on-scroll delay-200">
+          <div class="unfiltered-label">mistake</div>
+          <div class="unfiltered-text">→ over-optimizing before shipping</div>
+        </div>
+        
+        <div class="unfiltered-item reveal-on-scroll delay-300">
+          <div class="unfiltered-label">unpopular</div>
+          <div class="unfiltered-text">→ most AI projects fail at the system level, not the model</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       6. PRESENCE SECTION
+       =========================== -->
+  <section class="presence-section">
+    <div class="mentor-container">
+      <div class="presence-text reveal-on-scroll">works quietly, ships consistently</div>
+      <div class="presence-text reveal-on-scroll delay-100">focuses on systems, not noise</div>
+      <div class="presence-text reveal-on-scroll delay-200">builds things that actually run</div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       7. ENDING / SIGNATURE
+       =========================== -->
+  <footer class="mentor-footer">
+    <div class="mentor-container">
+      <div class="signature-text reveal-on-scroll">
+        still building.<br>not done yet.
+      </div>
+    </div>
   </footer>
+
+  <!-- Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
 
 </body>
 </html>

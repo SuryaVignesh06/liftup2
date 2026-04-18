@@ -47,10 +47,7 @@
           style="color: var(--vibrant-purple); opacity: 1; font-weight: 700;">Cohort 0</a>
       </nav>
       <div class="header-right-group">
-        <div class="live-status-badge" onclick="location.href='./#cohorts'">
-          <span class="pulse-dot"></span>
-          <span class="badge-text-prefix">COHORT 1 IS </span>LIVE
-        </div>
+
         <button class="btn-ticker-cta" onclick="location.href='apply.html'">Apply Now</button>
       </div>
     </div>
@@ -872,33 +869,65 @@
   </section>
 
   <!-- ===========================
-       MENTORS — Premium Focus
+       MENTOR TEASER SECTION
        =========================== -->
-  <section class="mentors-section" id="mentors">
-    <div class="container overflow-visible">
-      <div class="mentors-featured-grid">
-        <!-- LEFT: Mentor Image Block (No Image) -->
-        <div class="mentors-visual reveal">
-          <div class="mentor-hero-card" style="background: linear-gradient(135deg, rgba(160, 124, 254, 0.1), rgba(160, 124, 254, 0.02));">
-            <!-- Image removed per request -->
-          </div>
-          <div class="mentors-cta-wrapper" style="text-align: center; margin-top: 24px;">
-            <button class="btn-blue mentors-btn" onclick="location.href='mentors.html'">View Mentors</button>
-          </div>
-        </div>
+  <section class="mentors-section-site" id="mentors">
+    <div class="container mentors-site-container">
 
-        <!-- RIGHT: Content -->
-        <div class="mentors-content reveal">
-          <div class="overview-tag">MENTORS</div>
-          <h2 class="mentors-main-heading">Learn from people who have built <span class="orionac-text">real systems</span></h2>
-          <p class="mentors-body-text">LiftUp is guided by practitioners who have worked on production-grade AI systems and understand what it takes to move from theory to execution. Our mentors bring hands-on experience across building, scaling, and deploying intelligent systems in real environments.</p>
-
-          <div class="mentor-feature-block">
-            <h3 class="mentor-feature-name">Rishi <span class="mentor-feature-role">— AI Engineer</span></h3>
-            <p class="mentor-feature-bio">Rishi works at the intersection of machine learning and real-world system design, focusing on building scalable AI solutions and translating complex models into production-ready systems. His work emphasizes execution, reliability, and practical impact.</p>
-          </div>
-        </div>
+      <!-- HEADER BLOCK -->
+      <div class="mentors-site-eyebrow-row">
+        <span class="mentors-site-eyebrow">INSTRUCTORS</span>
+        <div class="mentors-site-line"></div>
       </div>
+      <h2 class="mentors-site-h2">Learn from people who actually <span style="background: linear-gradient(135deg, var(--vibrant-purple), var(--vibrant-orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">shipped.</span></h2>
+      <p class="mentors-site-sub">Not academics. Practitioners who ran real sprints with real students.</p>
+
+      <!-- MENTOR CARDS GRID -->
+      <div class="mentors-site-grid">
+        
+        <!-- CARD 1 -->
+        <a href="mentors.html" class="mentor-teaser-card reveal">
+          <img src="assets/mentors/rishi.jpg" alt="Rishi" class="teaser-avatar" onerror="this.outerHTML='<div class=\'teaser-avatar-fallback\'>R</div>'">
+          <h3 class="teaser-name">Rishi</h3>
+          <p class="teaser-role">AI Engineer · Cohort Instructor</p>
+          <div class="teaser-rule"></div>
+          <p class="teaser-bio">"doesn't explain. <span style="background: linear-gradient(135deg, var(--vibrant-purple), var(--vibrant-orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">builds</span> instead."</p>
+          <div class="teaser-tags">
+            <span class="teaser-tag">AI ENGINEER</span>
+            <span class="teaser-tag">SYSTEMS DESIGN</span>
+            <span class="teaser-tag">BUILDER</span>
+          </div>
+          <div class="teaser-bottom">
+            <span>View Profile</span>
+            <span class="teaser-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="mentors.html" class="mentor-teaser-card reveal" data-delay="120">
+          <img src="assets/mentors/syed-khasif.jpg" alt="Syed Khasif" class="teaser-avatar" onerror="this.outerHTML='<div class=\'teaser-avatar-fallback\'>S</div>'">
+          <h3 class="teaser-name">Khasif</h3>
+          <p class="teaser-role">Systems Instructor &middot; Regional Lead</p>
+          <div class="teaser-rule"></div>
+          <p class="teaser-bio">"region doesn't matter. <span style="background: linear-gradient(135deg, var(--vibrant-purple), var(--vibrant-orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">shipping</span> does."</p>
+          <div class="teaser-tags">
+            <span class="teaser-tag">SYSTEMS</span>
+            <span class="teaser-tag">J&K LEAD</span>
+            <span class="teaser-tag">ORIONAC</span>
+          </div>
+          <div class="teaser-bottom">
+            <span>View Profile</span>
+            <span class="teaser-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- CTA ROW -->
+      <div class="mentors-site-cta">
+        <a href="mentors.html" class="mentors-cta-btn">View Instructors →</a>
+      </div>
+
     </div>
   </section>
 
